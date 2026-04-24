@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Planos</title>
 
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <h1>Escolha seu Plano</h1>
+    <p>Acesso completo aos conteúdos</p>
+</header>
+
+<!-- PLANOS -->
+<section class="planos">
+
+    <div class="card">
+        <h2>Básico</h2>
+        <p class="preco">R$19,90</p>
+
+        <ul>
+            <li>✔ 1 dispositivo</li>
+            <li>✔ Conteúdo limitado</li>
+        </ul>
+
+        <button onclick="assinar()">Assinar</button>
+        <button class="teste" onclick="abrirTeste()">Testar grátis</button>
+    </div>
+
+    <div class="card destaque">
+        <span class="badge">Mais vendido</span>
+
+        <h2>Pro</h2>
+        <p class="preco">R$39,90</p>
+
+        <ul>
+            <li>✔ 5 dispositivos</li>
+            <li>✔ Conteúdo completo</li>
+        </ul>
+
+        <button onclick="assinar()">Assinar</button>
+        <button class="teste" onclick="abrirTeste()">Testar grátis</button>
+    </div>
+
+</section>
+
+<!-- MODAL TESTE -->
+<div id="modal" class="modal">
+    <div class="top">
+        <button onclick="fechar()">X</button>
+    </div>
+
+    <iframe src="https://testeagora.tv/logtvseries"></iframe>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
